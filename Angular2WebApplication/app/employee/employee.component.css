@@ -1,0 +1,12 @@
+﻿    .details li {
+        list-style: none;
+    }
+    li {
+        margin-bottom:10px;
+        
+    }
+
+    img {
+        vertical-align: middle;
+        width: 100%;
+    }

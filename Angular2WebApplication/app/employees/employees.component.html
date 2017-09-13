@@ -1,0 +1,40 @@
+﻿<div class="container">
+    <div class="row">
+        <!-- items being paged -->
+        <div *ngFor="let employee of employees" class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card" (click)="openEmployeePage(employee)">
+                <img class="card-img-top img-fluid w-100" src="{{employee.photoUrl}}" alt="">
+                <div class="card-body">
+                    <h6 class="card-title mb-1">
+                        <span>{{employee.firstName}} {{employee.lastName}}</span>
+                    </h6>
+                    <p class="card-text small">
+                        {{employee.position.name}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- pager -->
+    </div>
+    <div class="dataTables_paginate">
+        <ul *ngIf="pager.pages && pager.pages.length" class="pagination">
+            <li [ngClass]="{disabled:pager.currentPage === 1}" class="page-item">
+                <a (click)="setPage(1)" class="page-link">First</a>
+            </li>
+            <li [ngClass]="{disabled:pager.currentPage === 1}" class="page-item">
+                <a (click)="setPage(pager.currentPage - 1)" class="page-link">Previous</a>
+            </li>
+            <li *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}" class="page-item">
+                <a (click)="setPage(page)" class="page-link">{{page}}</a>
+            </li>
+            <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}" class="page-item">
+                <a (click)="setPage(pager.currentPage + 1)" class="page-link">Next</a>
+            </li>
+            <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}" class="page-item">
+                <a (click)="setPage(pager.totalPages)" class="page-link">Last</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+

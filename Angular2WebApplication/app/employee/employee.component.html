@@ -1,0 +1,26 @@
+﻿
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="container">    
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 col-lg-4">
+            <img src="{{employee.photoUrl}}" alt="stack photo" class="img">
+        </div>
+        <div class="col-md-8 col-sm-6 col-lg-8">
+            <div class="container" style="border-bottom:1px solid black">
+                <h2>{{employee.firstName}} {{employee.lastName}} {{employee.patronymic}}</h2>
+            </div>
+            <hr>
+            <h4>{{employee.position.name}}</h4>
+            <h4>{{employee.department.name}}</h4>
+            <h4>{{employee.dateOfBirth| date: 'dd/MM/yyyy'}}</h4>
+        </div>
+    </div>
+</div>
+</div>
+
+
+    
+
+
+

@@ -1,0 +1,6 @@
+C:\Sergey Developments\Angular2Application\Model\bin\Debug\Model.dll
+C:\Sergey Developments\Angular2Application\Model\bin\Debug\Model.pdb
+C:\Sergey Developments\Angular2Application\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Sergey Developments\Angular2Application\Model\obj\Debug\Model.dll
+C:\Sergey Developments\Angular2Application\Model\obj\Debug\Model.pdb
+C:\Sergey Developments\Angular2Application\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
