@@ -3,6 +3,7 @@ Angular 2 Single Page Appication + ASP.NET Web Api + Entity Framework
 Setup:
 
 1) Restore the sql server database from bacup file https://www.dropbox.com/s/v30bydhu1kgee6o/EmployeeDatabase.bak?dl=0
+Or execute initial scripts https://www.dropbox.com/s/32ph6sxua6htd4z/Schema.zip?dl=0
 
 2) Configure DefaultConnection in \WebApi\Web.config file
 
